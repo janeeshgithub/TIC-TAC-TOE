@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #3d0000, #24004d);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin: 20px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  cursor: pointer;
+  background-color: #003366; /* Blue color for the boxes */
+  color: black; /* Black color for X and O */
+  font-weight: bold; /* Make X and O bold */
+}
+
+.cell:hover {
+  background-color: #004080; /* Darker blue on hover */
+}
+
+.status {
+  font-weight: bold;
+}
+
+.restart-btn {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #003366; /* Blue color for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.restart-btn:hover {
+  background-color: #004080; /* Darker blue on hover */
+}
